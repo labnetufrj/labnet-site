@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Landing Page - Start Bootstrap Theme</title>
+  <title>LabNet – Laboratório de Redes e Multimídias - UFRJ</title>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -28,8 +28,8 @@
   <!-- Navigation -->
   <nav class="navbar navbar-light bg-light static-top">
     <div class="container">
-      <a class="navbar-brand" href="#">Start Bootstrap</a>
-      <a class="btn btn-primary" href="#">Sign In</a>
+      <a class="navbar-brand" href="#"><img height=100 src='img\labnet.jpg'></a>
+      <!--<a class="btn btn-primary" href="#">Sign In</a>-->
     </div>
   </nav>
 
@@ -39,10 +39,10 @@
     <div class="container">
       <div class="row">
         <div class="col-xl-9 mx-auto">
-          <h1 class="mb-5">Build a landing page for your business or project and generate more leads!</h1>
+          <h1 class="mb-5">LabNet <br>Laboratório de Redes e Multimídias</h1>
         </div>
         <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
-          <form>
+        <!--  <form>
             <div class="form-row">
               <div class="col-12 col-md-9 mb-2 mb-md-0">
                 <input type="email" class="form-control form-control-lg" placeholder="Enter your email...">
@@ -51,7 +51,7 @@
                 <button type="submit" class="btn btn-block btn-lg btn-primary">Sign up!</button>
               </div>
             </div>
-          </form>
+          </form>-->
         </div>
       </div>
     </div>
@@ -61,49 +61,66 @@
   <section class="features-icons bg-light text-center">
     <div class="container">
       <div class="row">
-        <div class="col-lg-4">
+        <div class="col-lg-4"><a href="#equipe">
           <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
             <div class="features-icons-icon d-flex">
-              <i class="icon-screen-desktop m-auto text-primary"></i>
+              <i class="icon-people m-auto text-primary"></i>
             </div>
-            <h3>Fully Responsive</h3>
+            <h3>Equipe</h3>
             <p class="lead mb-0">This theme will look great on any device, no matter the size!</p>
-          </div>
+          </div></a>
         </div>
-        <div class="col-lg-4">
+        <div class="col-lg-4"><a href="#publicacoes">
           <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
             <div class="features-icons-icon d-flex">
               <i class="icon-layers m-auto text-primary"></i>
             </div>
-            <h3>Bootstrap 4 Ready</h3>
+            <h3>Publicações</h3>
             <p class="lead mb-0">Featuring the latest build of the new Bootstrap 4 framework!</p>
-          </div>
+          </div></a>
         </div>
-        <div class="col-lg-4">
+        <div class="col-lg-4"><a href="#projetos">
           <div class="features-icons-item mx-auto mb-0 mb-lg-3">
             <div class="features-icons-icon d-flex">
-              <i class="icon-check m-auto text-primary"></i>
+              <i class="icon-calendar m-auto text-primary"></i>
             </div>
-            <h3>Easy to Use</h3>
+            <h3>Projetos em Andamento</h3>
             <p class="lead mb-0">Ready to use with your own content, or customize the source files!</p>
-          </div>
+          </div></a>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Image Showcases -->
-  <section class="showcase">
+  <section class="call-to-action text-white text-center"  id="projetos">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-9 mx-auto">
+          <h2 class="mb-2">PROJETOS</h2>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <section class="showcase" >
     <div class="container-fluid p-0">
       <div class="row no-gutters">
 
-        <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('img/bg-showcase-1.jpg');"></div>
+        <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('img/aquaponia.jpg');"></div>
         <div class="col-lg-6 order-lg-1 my-auto showcase-text">
-          <h2>Fully Responsive Design</h2>
-          <p class="lead mb-0">When you use a theme created by Start Bootstrap, you know that the theme will look great on any device, whether it's a phone, tablet, or desktop the page will behave responsively!</p>
+          <h2>Aquaponia</h2>
+              <p class="lead mb-0">  O projeto “Aquaponia” consiste em um sistema aquapônico, com funcionamento controlado por um Raspberry Pi. Através de sensores Aquaponia realiza a coleta de dados, como temperatura, umidade do ar, iluminação, etc. Atuadores programados podem controlar a iluminação, o funcionamento de bombas e até o controle do ar condicionado da sala.
+              <hr><p class="lead mb-0">  Um algoritmo está sendo desenvolvido, com bases nos dados obtidos dos sensores, para inferir a situação do aquário e da horta e sugerir que ações sejam tomadas. Por exemplo, o sistema poderia antecipar uma eventual queda de temperatura, e regular o ar condicionado de forma a otimizar o crescimento das plantas, sem prejudicar o bem-estar dos peixes.
+              <hr><p class="lead mb-0">  Essa linha de pesquisa está se destacando atualmente na academia devido à importância de sensores, com pouca capacidade de processamento, em smart-farms, carros autônomos, segurança e automatização residencial, etc.
+
+
         </div>
       </div>
-      <div class="row no-gutters">
+
+  <!--    <div class="row no-gutters">
         <div class="col-lg-6 text-white showcase-img" style="background-image: url('img/bg-showcase-2.jpg');"></div>
         <div class="col-lg-6 my-auto showcase-text">
           <h2>Updated For Bootstrap 4</h2>
@@ -116,33 +133,133 @@
           <h2>Easy to Use &amp; Customize</h2>
           <p class="lead mb-0">Landing Page is just HTML and CSS with a splash of SCSS for users who demand some deeper customization options. Out of the box, just add your content and images, and your new landing page will be ready to go!</p>
         </div>
+      </div>-->
+    </div>
+  </section>
+
+  <section class="call-to-action text-white text-center"  id="publicacoes">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-9 mx-auto">
+          <h2 class="mb-2">PUBLICAÇÕES</h2>
+
+        </div>
+
       </div>
     </div>
   </section>
 
+  <section class="showcase" >
+    <div class="container-fluid p-0">
+
+      <div class="row no-gutters">
+        <div class="col-lg-6 text-white showcase-img" style="background-image: url('img/bg-showcase-2.jpg');"></div>
+        <div class="col-lg-6 my-auto showcase-text">
+          <h2>Updated For Bootstrap 4</h2>
+          <p class="lead mb-0">Newly improved, and full of great utility classes, Bootstrap 4 is leading the way in mobile responsive web development! All of the themes on Start Bootstrap are now using Bootstrap 4!</p>
+        </div>
+      </div>
+
+      <!--<div class="row no-gutters">
+        <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('img/bg-showcase-3.jpg');"></div>
+        <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+          <h2>Easy to Use &amp; Customize</h2>
+          <p class="lead mb-0">Landing Page is just HTML and CSS with a splash of SCSS for users who demand some deeper customization options. Out of the box, just add your content and images, and your new landing page will be ready to go!</p>
+        </div>
+      </div>-->
+    </div>
+  </section>
+
   <!-- Testimonials -->
+
+  <section class="call-to-action text-white text-center"  id="equipe">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-9 mx-auto">
+          <h2 class="mb-2">EQUIPE</h2>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
   <section class="testimonials text-center bg-light">
     <div class="container">
-      <h2 class="mb-5">What people are saying...</h2>
+      <h2 class="mb-5">Professores</h2>
       <div class="row">
+
         <div class="col-lg-4">
           <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-            <img class="img-fluid rounded-circle mb-3" src="img/testimonials-1.jpg" alt="">
-            <h5>Margaret E.</h5>
+            <img class="img-fluid rounded-circle mb-3" src="img/luci.jpg" alt="">
+            <h5>Luci</h5>
+            <p class="font-weight-light mb-0">"Thanks so much for making these free resources available to us!"</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+            <img class="img-fluid rounded-circle mb-3" src="img/rust.jpg" alt="">
+            <h5>Luiz Fernando Rust</h5>
             <p class="font-weight-light mb-0">"This is fantastic! Thanks so much guys!"</p>
           </div>
         </div>
         <div class="col-lg-4">
           <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-            <img class="img-fluid rounded-circle mb-3" src="img/testimonials-2.jpg" alt="">
-            <h5>Fred S.</h5>
+            <img class="img-fluid rounded-circle mb-3" src="img/miceli.jpg" alt="">
+            <h5>Claudio Miceli</h5>
             <p class="font-weight-light mb-0">"Bootstrap is amazing. I've been using it to create lots of super nice landing pages."</p>
           </div>
         </div>
-        <div class="col-lg-4">
+
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonials text-center bg-light">
+    <div class="container">
+      <h2 class="mb-5">Doutorandos</h2>
+      <div class="row">
+        <div class="col-lg-2">
           <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-            <img class="img-fluid rounded-circle mb-3" src="img/testimonials-3.jpg" alt="">
-            <h5>Sarah W.</h5>
+            <img class="img-fluid rounded-circle mb-3" src="img/alvaro.jpg" alt="">
+            <h5>Alvaro Robles</h5>
+            <p class="font-weight-light mb-0">"This is fantastic! Thanks so much guys!"</p>
+          </div>
+        </div>
+        <div class="col-lg-2">
+          <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+            <img class="img-fluid rounded-circle mb-3" src="img/kopp.jpg" alt="">
+            <h5>L. Filipe Kopp</h5>
+            <p class="font-weight-light mb-0">"Bootstrap is amazing. I've been using it to create lots of super nice landing pages."</p>
+          </div>
+        </div>
+        <div class="col-lg-2">
+          <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+            <img class="img-fluid rounded-circle mb-3" src="img/gabriel1.jpg" alt="">
+            <h5>Gabriel</h5>
+            <p class="font-weight-light mb-0">"Thanks so much for making these free resources available to us!"</p>
+          </div>
+        </div>
+        <div class="col-lg-2">
+          <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+            <img class="img-fluid rounded-circle mb-3" src="img/gabriel2.jpg" alt="">
+            <h5>Gabriel</h5>
+            <p class="font-weight-light mb-0">"Thanks so much for making these free resources available to us!"</p>
+          </div>
+        </div>
+        <div class="col-lg-2">
+          <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+            <img class="img-fluid rounded-circle mb-3" src="img/gisele.jpg" alt="">
+            <h5>Gisele</h5>
+            <p class="font-weight-light mb-0">"Thanks so much for making these free resources available to us!"</p>
+          </div>
+        </div>
+        <div class="col-lg-2">
+          <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+            <img class="img-fluid rounded-circle mb-3" src="img/gabriel2.jpg" alt="">
+            <h5>Gabriel</h5>
             <p class="font-weight-light mb-0">"Thanks so much for making these free resources available to us!"</p>
           </div>
         </div>
@@ -150,15 +267,188 @@
     </div>
   </section>
 
+  <section class="testimonials text-center bg-light">
+    <div class="container">
+      <h2 class="mb-5">Mestrandos</h2>
+      <div class="row">
+        <div class="col-lg-2">
+          <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+            <img class="img-fluid rounded-circle mb-3" src="img/hugo.jpg" alt="">
+            <h5>Hugo Dantas</h5>
+            <p class="font-weight-light mb-0">"This is fantastic! Thanks so much guys!"</p>
+          </div>
+        </div>
+        <div class="col-lg-2">
+          <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+            <img class="img-fluid rounded-circle mb-3" src="img/jessica.jpg" alt="">
+            <h5>Jessica Genta</h5>
+            <p class="font-weight-light mb-0">"Bootstrap is amazing. I've been using it to create lots of super nice landing pages."</p>
+          </div>
+        </div>
+        <div class="col-lg-2">
+          <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+            <img class="img-fluid rounded-circle mb-3" src="img/beatriz.jpg" alt="">
+            <h5>Beatriz Andrade</h5>
+            <p class="font-weight-light mb-0">"Thanks so much for making these free resources available to us!"</p>
+          </div>
+        </div>
+        <div class="col-lg-2">
+          <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+            <img class="img-fluid rounded-circle mb-3" src="img/felipepires.jpg" alt="">
+            <h5>Felipe Pires</h5>
+            <p class="font-weight-light mb-0">"Thanks so much for making these free resources available to us!"</p>
+          </div>
+        </div>
+        <div class="col-lg-2">
+          <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+            <img class="img-fluid rounded-circle mb-3" src="img/marcos.jpg" alt="">
+            <h5>Marcos</h5>
+            <p class="font-weight-light mb-0">"Thanks so much for making these free resources available to us!"</p>
+          </div>
+        </div>
+        <div class="col-lg-2">
+          <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+            <img class="img-fluid rounded-circle mb-3" src="img/cristovao.jpg" alt="">
+            <h5>Cristovão</h5>
+            <p class="font-weight-light mb-0">"Thanks so much for making these free resources available to us!"</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonials text-center bg-light">
+    <div class="container">
+      <h2 class="mb-5">Iniciação Científica</h2>
+      <div class="row">
+
+        <div class="col-lg-2">
+          <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+            <img class="img-fluid rounded-circle mb-3" src="img/yago.jpg" alt="">
+            <h5>Yago</h5>
+            <p class="font-weight-light mb-0">"This is fantastic! Thanks so much guys!"</p>
+          </div>
+        </div>
+        <div class="col-lg-2">
+          <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+            <img class="img-fluid rounded-circle mb-3" src="img/victoria.jpg" alt="">
+            <h5>Victoria</h5>
+            <p class="font-weight-light mb-0">"Bootstrap is amazing. I've been using it to create lots of super nice landing pages."</p>
+          </div>
+        </div>
+
+        <div class="col-lg-2">
+          <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+            <img class="img-fluid rounded-circle mb-3" src="img/victor.jpg" alt="">
+            <h5>Victor</h5>
+            <p class="font-weight-light mb-0">"Bootstrap is amazing. I've been using it to create lots of super nice landing pages."</p>
+          </div>
+        </div>
+
+
+        <div class="col-lg-2">
+          <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+            <img class="img-fluid rounded-circle mb-3" src="img/gustavo.jpg" alt="">
+            <h5>Gustavo</h5>
+            <p class="font-weight-light mb-0">"Bootstrap is amazing. I've been using it to create lots of super nice landing pages."</p>
+          </div>
+        </div>
+
+        <div class="col-lg-2">
+          <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+            <img class="img-fluid rounded-circle mb-3" src="img/bruno.jpg" alt="">
+            <h5>Bruno</h5>
+            <p class="font-weight-light mb-0">"Bootstrap is amazing. I've been using it to create lots of super nice landing pages."</p>
+          </div>
+        </div>
+
+        <div class="col-lg-2">
+          <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+            <img class="img-fluid rounded-circle mb-3" src="img/gustavo.jpg" alt="">
+            <h5>Gustavo</h5>
+            <p class="font-weight-light mb-0">"Bootstrap is amazing. I've been using it to create lots of super nice landing pages."</p>
+          </div>
+        </div>
+
+        <div class="col-lg-2">
+          <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+            <img class="img-fluid rounded-circle mb-3" src="img/jonatas.jpg" alt="">
+            <h5>Jonatas</h5>
+            <p class="font-weight-light mb-0">"Bootstrap is amazing. I've been using it to create lots of super nice landing pages."</p>
+          </div>
+        </div>
+
+
+        <div class="col-lg-2">
+          <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+            <img class="img-fluid rounded-circle mb-3" src="img/acacia.jpg" alt="">
+            <h5>Acacia</h5>
+            <p class="font-weight-light mb-0">"Bootstrap is amazing. I've been using it to create lots of super nice landing pages."</p>
+          </div>
+        </div>
+
+
+        <div class="col-lg-2">
+          <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+            <img class="img-fluid rounded-circle mb-3" src="img/leonardo.jpg" alt="">
+            <h5>Leonardo</h5>
+            <p class="font-weight-light mb-0">"Bootstrap is amazing. I've been using it to create lots of super nice landing pages."</p>
+          </div>
+        </div>
+
+
+
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonials text-center bg-light">
+    <div class="container">
+      <h2 class="mb-5">Colaboradores</h2>
+      <div class="row">
+        <div class="col-lg-3">
+          <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+            <img class="img-fluid rounded-circle mb-3" src="img/tiago.jpg" alt="">
+            <h5>Tiago França</h5>
+            <p class="font-weight-light mb-0">"This is fantastic! Thanks so much guys!"</p>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+            <img class="img-fluid rounded-circle mb-3" src="img/fantasma.jpg" alt="">
+            <h5>Elton Costa</h5>
+            <p class="font-weight-light mb-0">"Bootstrap is amazing. I've been using it to create lots of super nice landing pages."</p>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+            <img class="img-fluid rounded-circle mb-3" src="img/emanuele.jpg" alt="">
+            <h5>Emanuele Nunes</h5>
+            <p class="font-weight-light mb-0">"Thanks so much for making these free resources available to us!"</p>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+            <img class="img-fluid rounded-circle mb-3" src="img/igor.jpg" alt="">
+            <h5>Igor</h5>
+            <p class="font-weight-light mb-0">"Thanks so much for making these free resources available to us!"</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
   <!-- Call to Action -->
   <section class="call-to-action text-white text-center">
     <div class="overlay"></div>
     <div class="container">
       <div class="row">
         <div class="col-xl-9 mx-auto">
-          <h2 class="mb-4">Ready to get started? Sign up now!</h2>
+          <h2 class="mb-2">Entre em contato através do email <a href="mailto:suporte@labnet.nce.ufrj.br">suporte@labnet.nce.ufrj.br</a></h2>
+
         </div>
-        <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
+
+      <!--  <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
           <form>
             <div class="form-row">
               <div class="col-12 col-md-9 mb-2 mb-md-0">
@@ -169,10 +459,55 @@
               </div>
             </div>
           </form>
-        </div>
+        </div>-->
+
       </div>
     </div>
   </section>
+
+
+  <section class="testimonials text-center bg-light">
+    <div class="container">
+      <h2 class="mb-5">Instituições</h2>
+      <div class="row">
+
+        <div class="col-lg-4">
+          <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+                        <a href="http://ufrj.br">
+            <img class="img-fluid rounded-circle mb-3" src="img/ufrj.jpg" alt="">
+            <h5>UFRJ</h5>
+            <p class="font-weight-light mb-0">
+
+              Universidade Federal do RIo de Janeiro</p>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+            <a href="http://portal.nce.ufrj.br">
+            <img class="img-fluid rounded-circle mb-3" src="img/nce.jpg" alt="">
+            <h5>NCE</h5>
+            <p class="font-weight-light mb-0">
+            Instituto Tércio Pacitti de Aplicações e Pesquisas Computacionais
+          </a>
+          </p>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+                        <a href="http://ppgi.ufrj.br">
+            <img class="img-fluid rounded-circle mb-3" src="img/ppgi.jpg" alt="">
+            <h5>PPGI</h5>
+            <p class="font-weight-light mb-0">"Bootstrap is amazing. I've been using it to create lots of super nice landing pages."</p>
+        </a>
+        </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
 
   <!-- Footer -->
   <footer class="footer bg-light">
@@ -196,7 +531,7 @@
               <a href="#">Privacy Policy</a>
             </li>
           </ul>
-          <p class="text-muted small mb-4 mb-lg-0">&copy; Your Website 2019. All Rights Reserved.</p>
+          <p class="text-muted small mb-4 mb-lg-0">&copy; Labnet 2019. All Rights Reserved.</p>
         </div>
         <div class="col-lg-6 h-100 text-center text-lg-right my-auto">
           <ul class="list-inline mb-0">
