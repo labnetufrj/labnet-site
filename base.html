@@ -1,0 +1,157 @@
+<!--Template para as pagina não-home (index)-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Site do Lab - Novo Design</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <header>
+
+  </header>
+  <section class="sub-header">
+      <nav>
+        <a href="index.html"> <img src="images/logo_branca_labnet.png"></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="equipe.html">Equipe</a></li>
+              <li><a href="publicacoes.html">Publicações</a></li>
+              <li><a href="projetos.html">Projetos</a></li>
+              <li><a href="contato.html">Contato</a></li>
+            </ul>
+         </div>
+          <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <h1>Equipe</h1> 
+      <div class="img-credit">
+        <p>Photo by <a href="https://unsplash.com/@pawel_czerwinski?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Pawel Czerwinski</a> on <a href="https://unsplash.com/photos/eybM9n4yrpE?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
+      </div>
+  </section>
+
+
+
+<!------------- instituicoes --------------->
+<section class="institutions">
+    <h3>Instituições associadas</h3>
+    <div class="inst-row">
+      
+      <div class="inst-col">
+        <a href="https://ufrj.br" target="_blank">
+          <button>
+            <img src="images/ufrj-horizontal-cor-rgb-completa-telas.png">
+          </button> 
+          </a>
+      </div>
+
+      <div class="inst-col">
+        <a href="https://pesc.coppe.ufrj.br" target="_blank">
+          <button>
+            <img src="images/pesccor.png">
+          </button>
+        </a>
+      </div>
+
+      <div class="inst-col">
+        <a href="https://nce.ufrj.br" target="_blank">
+          <button>
+            <img src="images/logo_nce.png">
+          </button>
+        </a>
+      </div>
+
+      <div class="inst-col">
+        <a href="https://ppgi.ufrj.br" target="_blank">
+          <button>
+            <img src="images/Logo-PPGI-80-3.png">
+          </button>
+        </a>
+      </div>
+
+    </div>
+</section>
+
+
+<!---------JavaScript para Toggle Menu --------------->
+<script>
+  var navLinks = document.getElementById("navLinks")
+
+  function showMenu(){
+    navLinks.style.right = "0"
+  }
+  function hideMenu(){
+    navLinks.style.right = "-200px"
+  }
+</script>
+<!----------------------------------------------------------->
+
+<!------------Footer ------------>
+  <footer>
+    <div class="footer-row">
+      <div class="footer-col">
+        
+        <img src="images/logo_branca_labnet.png" class="logo">
+        <div class="footer-col2">
+          <p class="email-id">suporte@labnet.nce.ufrj.br</p>
+        </div>
+  
+        <div class="footer-col2">
+          <i class="fa fa-phone" aria-hidden="true"></i>
+          <h4>+55 21 3938-3229</h4>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h3>Endereço<div class="underline"><span></span></div></h3>
+        <p>Av. Athos da Silveira Ramos, 274 Prédio do CCMN, Cidade Universitária - Ilha do Fundão - Rio de Janeiro, RJ.</p>
+        <p></p>
+  
+      </div>
+      <div class="footer-col">
+        <h3>Links<div class="underline"><span></span></div></h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="equipe.html">Equipe</a></li>
+          <li><a href="publicacoes.html">Publicações</a></li>
+          <li><a href="projetos.html">Projetos</a></li>
+          <li><a href="contato.html">Contato</a></li>
+
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Newsletter<div class="underline"><span></span></div></h3>
+        <form>
+          <i class="fa fa-envelope-o" aria-hidden="true"></i>
+          <input type="email" placeholder="Enter your email id" required>
+          <button type="submit">
+            <i class="fa fa-arrow-right" aria-hidden="true"></i>
+          </button>
+        </form>
+        <div class="social-icons">
+          <!--facebook-->
+          <a href="https://www.facebook.com/labnetnce/" target="_blank">
+              <i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+          <!--Linkedin-->
+          <a href="https://www.linkedin.com/company/labnet/" target="_blank">
+              <i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+          <!--instagram-->
+          <a href="https://www.instagram.com/labnetnce/" target="_blank">
+              <i class="fa fa-instagram" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <p class="copyright">© Labnet 2019. All Rights Reserved.</p>
+  </footer>
+<!------------------------------->
+</body>
+</html>

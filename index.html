@@ -1,591 +1,278 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
-  <title>LabNet – Laboratório de Redes e Multimídias - UFRJ</title>
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
-  <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
-  <link href="css/landing-page.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Labnet - Laboratório de Redes e Multimídia</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300&family=Montserrat:wght@100;400;700&display=swap" rel="stylesheet">   
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-
 <body>
+  <header>
 
-  <!-- Navigation -->
-  <nav class="navbar navbar-light  static-top">
-    <div class="container">
-      <a class="navbar-brand" href="#"><img height=100 src='img\labnet.jpg'></a>
-      <!--<a class="btn btn-primary" href="#">Sign In</a>-->
-    </div>
-  </nav>
-
-  <!-- Masthead -->
-  <header class="masthead text-white text-center">
-    <div class="overlay"></div>
-    <div class="container">
-      <div class="row">
-        <div class="col-xl-9 mx-auto">
-          <h1 class="mb-5">LabNet <br>Laboratório de Redes e Multimídias</h1>
-        </div>
-        <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
-        <!--  <form>
-            <div class="form-row">
-              <div class="col-12 col-md-9 mb-2 mb-md-0">
-                <input type="email" class="form-control form-control-lg" placeholder="Enter your email...">
-              </div>
-              <div class="col-12 col-md-3">
-                <button type="submit" class="btn btn-block btn-lg btn-primary">Sign up!</button>
-              </div>
-            </div>
-          </form>-->
-        </div>
-      </div>
-    </div>
   </header>
+  <section class="header">
+      <nav>
+        <a href="index.html"> <img src="images/logo_branca_labnet.png"></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
 
-  <!-- Icons Grid -->
-  <section class="features-icons bg-light text-center">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-4"><a href="#equipe">
-          <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
-            <div class="features-icons-icon d-flex">
-              <i class="icon-people m-auto text-primary"></i>
-            </div>
-            <h3>Equipe</h3>
-            <!--<p class="lead mb-0">This theme will look great on any device, no matter the size!</p>-->
-          </div></a>
-        </div>
-        <div class="col-lg-4"><a href="#publicacoes">
-          <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
-            <div class="features-icons-icon d-flex">
-              <i class="icon-layers m-auto text-primary"></i>
-            </div>
-            <h3>Publicações</h3>
-            <!--<p class="lead mb-0">This theme will look great on any device, no matter the size!</p>-->
-          </div></a>
-        </div>
-        <div class="col-lg-4"><a href="#projetos">
-          <div class="features-icons-item mx-auto mb-0 mb-lg-3">
-            <div class="features-icons-icon d-flex">
-              <i class="icon-calendar m-auto text-primary"></i>
-            </div>
-            <h3>Projetos em Andamento</h3>
-            <!--<p class="lead mb-0">This theme will look great on any device, no matter the size!</p>-->
-          </div></a>
-        </div>
-      </div>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="equipe.html">Equipe</a></li>
+              <li><a href="publicacoes.html">Publicações</a></li>
+              <li><a href="projetos.html">Projetos</a></li>
+              <li><a href="contato.html">Contato</a></li>
+            </ul>
+         </div>
+          <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+       
+    <div class="text-box">
+      <h1>LabNet<br>Laboratório de Redes e Multimídia</h1>
+      <p>Universidade Federal do Rio de Janeiro<br>Instituto Tércio Pacitti de Aplicações e Pesquisas Computacionais</p>
+      
+      <button onclick="scrollToSection('quemsomos')" class="nbutton type1">
+        <span>Saiba Mais</span>
+      </button>
+  
+    </div>
+    <div class="img-credit">
+      <p>Photo by <a href="https://unsplash.com/@pawel_czerwinski?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="blank">Pawel Czerwinski</a> on <a href="https://unsplash.com/photos/eybM9n4yrpE?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="blank">Unsplash</a></p>
     </div>
   </section>
-
-  <!-- Image Showcases -->
-  <section class="call-to-action text-white text-center"  id="projetos">
-    <div class="overlay"></div>
-    <div class="container">
-      <div class="row">
-        <div class="col-xl-9 mx-auto">
-          <h2 class="mb-2">PROJETOS EM ANDAMENTO</h2>
-
-        </div>
-
+  <script>
+    function scrollToSection(sectionId) {
+      var section = document.getElementById(sectionId);
+      if (section) {
+        section.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  </script>
+<!--------- QUEM SOMOS ----------->
+<section class="cont-proj">
+  <section id = "quemsomos" class="title container">
+    <div class="trow">
+      <div class="col-md-13">
+        <h1>QUEM SOMOS?</h1>
+        <div class="seperator"></div>
+        <p>O Laboratório de Redes e Multimídia (LABNET) localiza-se no Instituto Tércio Pacitti de Aplicações e Pesquisas Computacionais (NCE) da Universidade Federal do Rio de Janeiro (UFRJ).</p>
       </div>
     </div>
-  </section>
-  <section class="showcase" >
-    <div class="container-fluid p-0">
-      <div class="row no-gutters">
-
-        <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('img/aquaponia.jpg');"></div>
-        <div class="col-lg-6 order-lg-1 my-auto showcase-text">
-          <h2>Aquaponia</h2>
-              <p class="lead mb-0">  O projeto “Aquaponia” consiste em um sistema aquapônico, com funcionamento controlado por um Raspberry Pi. Através de sensores Aquaponia realiza a coleta de dados, como temperatura, umidade do ar, iluminação, etc. Atuadores programados podem controlar a iluminação, o funcionamento de bombas e até o controle do ar condicionado da sala.
-              <hr><p class="lead mb-0">  Um algoritmo está sendo desenvolvido, com bases nos dados obtidos dos sensores, para inferir a situação do aquário e da horta e sugerir que ações sejam tomadas. Por exemplo, o sistema poderia antecipar uma eventual queda de temperatura, e regular o ar condicionado de forma a otimizar o crescimento das plantas, sem prejudicar o bem-estar dos peixes.
-              <hr><p class="lead mb-0">  Essa linha de pesquisa está se destacando atualmente na academia devido à importância de sensores, com pouca capacidade de processamento, em smart-farms, carros autônomos, segurança e automatização residencial, etc.
-
-
+</section>
+   <!-- Start Blog Layout -->
+  <div class="container">
+    <div class="prow">
+      <div class="col-md-6 item">
+        <div class="item-in">
+          <h4>Direção</h4>
+          <div class="seperator"></div>
+          <p>Professor Claudio Miceli de Farias</p>
         </div>
       </div>
-
-  <div class="row no-gutters">
-        <div class="col-lg-6 text-white showcase-img" style="background-image: url('img/nautilus.jpg');"></div>
-        <div class="col-lg-6 my-auto showcase-text">
-          <h2>UFRJ Nautilus</h2>
-          <p class="lead mb-0">Única equipe de graduação da américa latina a desenvolver Veículos Submarinos Autônomos (AUV's) e o nosso objetivo é participar da maior competição de automação naval do mundo, a RoboSub, para representar o Brasil. Durante um ano, nos esforçamos ao máximo para desenvolver um projeto que mostre excelência e inovação puramente nacionais.</p>
-          <h3><a href="https://www.ufrjnautilus.com" target="_blank">VER MAIS</a></h3>
-    </div>
-      </div>
-  <!--        <div class="row no-gutters">
-        <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('img/bg-showcase-3.jpg');"></div>
-        <div class="col-lg-6 order-lg-1 my-auto showcase-text">
-          <h2>Easy to Use &amp; Customize</h2>
-          <p class="lead mb-0">Landing Page is just HTML and CSS with a splash of SCSS for users who demand some deeper customization options. Out of the box, just add your content and images, and your new landing page will be ready to go!</p>
-        </div>
-      </div>-->
-    </div>
-  </section>
-
-  <section class="call-to-action text-white text-center"  id="publicacoes">
-    <div class="overlay"></div>
-    <div class="container">
-      <div class="row">
-        <div class="col-xl-9 mx-auto">
-          <h2 class="mb-2">PUBLICAÇÕES</h2>
-
-        </div>
-
+    <div class="col-md-6 item">
+      <div class="item-in">
+        <h4>Missão</h4>
+        <div class="seperator"></div>
+        <p>Executar de maneira coordenada, em um ambiente catalisador de formação, projetos de ensino, pesquisa e extensão de caráter inovador e ético.</p>
       </div>
     </div>
-  </section>
-
-  <section class="showcase" >
-    <div class="container-fluid p-0">
-
-      <div class="row no-gutters">
-        <div class="col-lg-6 text-white showcase-img" style="background-image: url('img/bg-showcase-2.jpg');"></div>
-        <div class="col-lg-6 my-auto showcase-text">
-          <h4>Athena: A Knowledge Fusion Algorithm for the Internet of Things</h4>
-          <p class="lead mb-0">Internet of things (IoT) is envisioned as the interconnection of the Internet with sensing and actuating devices. IoT systems are usually designed to collect massive amounts of data from multiple and possibly conflicting sources. Nevertheless, data must be refined before being stored in a repository, so as information can be correctly extracted for further uses. Knowledge fusion is an important technique to identify and eliminate erroneous data from compromised sources or any mistakes that might have occurred during the extraction process. We propose a new multisensor data fusion algorithm for IoT that supports the knowledge extraction needed to adapt knowledge graphs. This algorithm, named Athena, enhances accuracy when compared to the traditional multisensor data fusion techniques. We also discuss the role of reinforcement learn over integration on a multi-application WSAN.</p>
-        </div>
-      </div>
-
-    <div class="row no-gutters">
-        <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('img/agrometeorological.jpg');"></div>
-        <div class="col-lg-6 order-lg-1 my-auto showcase-text">
-          <h4>Using agrometeorological data to assist irrigation management in oil palm crops: A decision support method and results from crop model simulation</h4>
-          <p class="lead mb-0">In order to achieve optimum yields in oil palm, management practices should be tailored to the crop site agro-ecological conditions. Nevertheless, oil palm farmers often have to make decisions based on a limited knowledge base. Considering that water management is a critical aspect of oil palm crops, this paper describes an inference method for irrigation decision-making in oil palm supported on soil moisture and vapor pressure deficit data. Under an ideal scenario where this agrometeorological data is available through a Wireless Sensor Network (WSN) at a crop plot resolution, we formulated a method to prevent oil palm farmers to submit their crops to water deficit stress. The inference method was based on a Data Fusion technique called Dempster-Shafer Inference, which is convenient for the use of uncertain data with distinct levels of detail such as those present in a WSN. The outcome of fusing soil moisture …</p>
-        </div>
-      </div>
-
-      <div class="row no-gutters">
-        <div class="col-lg-6 text-white showcase-img" style="background-image: url('img/multisensor.jpg');"></div>
-        <div class="col-lg-6 my-auto showcase-text">
-          <h4>A multi-sensor data fusion technique using data correlations among multiple applications</h4>
-          <p class="lead mb-0">While wireless sensor networks (WSNs) have been traditionally tasked with single applications, in recent years we have witnessed the emergence of WSNs that allow the sensing and communication infrastructure to be shared among multiple applications thus optimizing the use of resources. As the number of applications in a WSN increases, a growing amount of sensor-generated data will be produced, from which useful information can be extracted. A major requirement in these networks is to save energy in order to extend their operational lifetime. However, wireless sensors and actuators commonly rely on batteries as their energy sources, whose replacement is undesirable or unfeasible. Among the methods employed to extend network lifetime, Multisensor data fusion (MDF) is one of the most widely used. Traditional MDFs are not able to identify different contexts, since they are designed using an application …</p>
-        </div>
-      </div>
-
-
-    </div>
-  </section>
-
-  <!-- Testimonials -->
-
-  <section class="call-to-action text-white text-center"  id="equipe">
-    <div class="overlay"></div>
-    <div class="container">
-      <div class="row">
-        <div class="col-xl-9 mx-auto">
-          <h2 class="mb-2">EQUIPE</h2>
-
-        </div>
-
+    <div class="col-md-6 item">
+      <div class="item-in">
+        <h4>Visão</h4>
+          <div class="seperator"></div>
+          <p>Ser um agente transformador na formação dos alunos da UFRJ para que estes tenham acesso ao estado da arte nas áreas de atuação do laboratório, atinjam excelência técnica e empoderamento, como também, ser um agente transformador do seu entorno</p>
       </div>
     </div>
-  </section>
-  <section class="testimonials text-center bg-light">
-    <div class="container">
-      <h2 class="mb-5">Professores</h2>
-      <div class="row">
-
-        <div class="col-lg-4">
-          <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-            <img class="img-fluid rounded-circle mb-3" src="img/luci.jpg" alt="">
-            <h5>Luci Pirmez</h5>
-          <!--  <a href="https://www.linkedin.com/in/xxx/" target="_blank">
-              <i class="fab fa-linkedin fa-2x fa-fw"></i></a>
-              <a href="https://twitter.com/xxx" target="_blank">
-                <i class="fab fa-twitter-square fa-2x fa-fw"></i></a>-->
-                <a href="https://scholar.google.com.br/citations?hl=pt-BR&user=MwdhvMEAAAAJ&view_op=list_works&sortby=pubdate" target="_blank">
-                <i class="ai ai-google-scholar-square ai-2x"></i></a>
-      <p class="font-weight-light mb-0">Professora Pesquisadora.</p>
+    <div class="col-md-6 item">
+      <div class="item-in">
+        <h4>Valores</h4>
+          <div class="seperator"></div>
+          <p>Excelência técnica, ética, coragem para lidar com o risco, espírito inovador, responsabilidade social, harmonia e integração entre as pessoas dentro e fora do ambiente de trabalho, valorização da diversidade</p>
+      </div>
     </div>
   </div>
-
-        <div class="col-lg-4">
-          <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-            <img class="img-fluid rounded-circle mb-3" src="img/rust.jpg" alt="">
-            <h5>Luiz Fernando Rust</h5>
-          <!--     <a href="https://www.linkedin.com/in/xxx/" target="_blank">
-              <i class="fab fa-linkedin fa-2x fa-fw"></i></a>
-           <a href="https://twitter.com/xxx" target="_blank">
-                <i class="fab fa-twitter-square fa-2x fa-fw"></i></a>-->
-                <a href="https://scholar.google.com.br/citations?hl=en&user=FBxMfWoAAAAJ&view_op=list_works&sortby=pubdate" target="_blank">
-                <i class="ai ai-google-scholar-square ai-2x"></i></a>
-      <p class="font-weight-light mb-0">Professor pesquisador.
-        Doutor em Informática pela Université Toulouse III Paul Sabatier </p>
-    </div>
-  </div>
-
-        <div class="col-lg-4">
-          <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-            <img class="img-fluid rounded-circle mb-3" src="img/miceli.jpg" alt="">
-            <h5>Claudio Miceli</h5>
-            <!--<a href="https://www.linkedin.com/in/xxx/" target="_blank">
-              <i class="fab fa-linkedin fa-2x fa-fw"></i></a>
-              <a href="https://twitter.com/xxx" target="_blank">
-                <i class="fab fa-twitter-square fa-2x fa-fw"></i></a>-->
-                <a href="https://scholar.google.com.br/citations?hl=pt-BR&user=S0yCysMAAAAJ&view_op=list_works&sortby=pubdate" target="_blank">
-                <i class="ai ai-google-scholar-square ai-2x"></i></a>
-      <p class="font-weight-light mb-0">Professor Pesquisador. Doutor em Informática pela Universidade Federal do Rio de Janeiro</p>
-    </div>
-  </div>
-        </div>
-
-      </div>
-
-  </section>
-
-  <section class="testimonials text-center bg-light">
-    <div class="container">
-      <h2 class="mb-5">Doutorandos</h2>
-      <div class="row">
-        <div class="col-lg-2">
-          <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-            <img class="img-fluid rounded-circle mb-3" src="img/alvaro.jpg" alt="">
-            <h5>Alvaro Robles</h5>
-            <!--<p class="font-weight-light mb-0">"This is fantastic! Thanks so much guys!"</p>-->
-          </div>
-        </div>
-
-        <div class="col-lg-2">
-          <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-            <img class="img-fluid rounded-circle mb-3" src="img/kopp.jpg" alt="">
-            <h5>Luis Filipe Kopp</h5>
-                  <a href="https://www.linkedin.com/in/lfkopp/" target="_blank">
-                    <i class="fab fa-linkedin fa-2x fa-fw"></i></a>
-                    <a href="https://twitter.com/FilipeKopp" target="_blank">
-                      <i class="fab fa-twitter-square fa-2x fa-fw"></i></a>
-                      <a href="https://scholar.google.com.br/citations?user=ovcUBKMAAAAJ&hl=en" target="_blank">
-                      <i class="ai ai-google-scholar-square ai-2x"></i></a>
-                      <a href="http://lattes.cnpq.br/1697004554624931" target="_blank">
-                      <i class="ai ai-lattes ai-2x"></i></a>
-
-
-            <p class="font-weight-light mb-0">Engenheiro de Produção Civil e Ambiental pela PUC-Rio e mestrado em Administração pela FGV.</p>
-          </div>
-        </div>
-
-
-        <div class="col-lg-2">
-          <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-            <img class="img-fluid rounded-circle mb-3" src="img/gabriel1.jpg" alt="">
-            <h5>Gabriel Caldas</h5>
-            <!--<p class="font-weight-light mb-0">"This is fantastic! Thanks so much guys!"</p>-->
-          </div>
-        </div>
-        <div class="col-lg-2">
-          <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-            <img class="img-fluid rounded-circle mb-3" src="img/gabriel2.jpg" alt="">
-            <h5>Gabriel</h5>
-            <!--<p class="font-weight-light mb-0">"This is fantastic! Thanks so much guys!"</p>-->
-          </div>
-        </div>
-
+</section>
+<!--------- LAFUSION ----------------> >
+<section class="cont-proj">
+  <section class="title container">
+    <div class="trow">
+      <div class="col-md-12">
+        <h1>LA FUSION</h1>
+        <div class="seperator"></div>
+        <p>Conferência Latinoamericana sobre Data Fusion</p>
       </div>
     </div>
   </section>
-
-  <section class="testimonials text-center bg-light">
-    <div class="container">
-      <h2 class="mb-5">Mestrandos</h2>
-      <div class="row">
-        <div class="col-lg-2">
-          <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-            <img class="img-fluid rounded-circle mb-3" src="img/hugo.jpg" alt="">
-            <h5>Hugo Dantas</h5>
-            <!--<p class="font-weight-light mb-0">"This is fantastic! Thanks so much guys!"</p>-->
-          </div>
-        </div>
-        <div class="col-lg-2">
-          <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-            <img class="img-fluid rounded-circle mb-3" src="img/jessica.jpg" alt="">
-            <h5>Jessica Genta</h5>
-            <!--<p class="font-weight-light mb-0">"This is fantastic! Thanks so much guys!"</p>-->
-          </div>
-        </div>
-        <div class="col-lg-2">
-          <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-            <img class="img-fluid rounded-circle mb-3" src="img/beatriz.jpg" alt="">
-            <h5>Beatriz Andrade</h5>
-            <!--<p class="font-weight-light mb-0">"This is fantastic! Thanks so much guys!"</p>-->
-          </div>
-        </div>
-        <div class="col-lg-2">
-          <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-            <img class="img-fluid rounded-circle mb-3" src="img/felipepires.jpg" alt="">
-            <h5>Felipe Pires</h5>
-            <!--<p class="font-weight-light mb-0">"This is fantastic! Thanks so much guys!"</p>-->
-          </div>
-        </div>
-        <div class="col-lg-2">
-          <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-            <img class="img-fluid rounded-circle mb-3" src="img/marcos.jpg" alt="">
-            <h5>Marcos</h5>
-            <!--<p class="font-weight-light mb-0">"This is fantastic! Thanks so much guys!"</p>-->
-          </div>
-        </div>
-        <div class="col-lg-2">
-          <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-            <img class="img-fluid rounded-circle mb-3" src="img/cristovao.jpg" alt="">
-            <h5>Cristovão</h5>
-            <!--<p class="font-weight-light mb-0">"This is fantastic! Thanks so much guys!"</p>-->
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="testimonials text-center bg-light">
-    <div class="container">
-      <h2 class="mb-5">Iniciação Científica</h2>
-      <div class="row">
-
-        <div class="col-lg-2">
-          <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-            <img class="img-fluid rounded-circle mb-3" src="img/yago.jpg" alt="">
-            <h5>Yago</h5>
-            <!--<p class="font-weight-light mb-0">"This is fantastic! Thanks so much guys!"</p>-->
-          </div>
-        </div>
-        <div class="col-lg-2">
-          <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-            <img class="img-fluid rounded-circle mb-3" src="img/victoria.jpg" alt="">
-            <h5>Victoria</h5>
-            <!--<p class="font-weight-light mb-0">"This is fantastic! Thanks so much guys!"</p>-->
-          </div>
-        </div>
-
-        <div class="col-lg-2">
-          <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-            <img class="img-fluid rounded-circle mb-3" src="img/victor.jpg" alt="">
-            <h5>Victor</h5>
-            <!--<p class="font-weight-light mb-0">"This is fantastic! Thanks so much guys!"</p>-->
-          </div>
-        </div>
-
-
-        <!--<div class="col-lg-2">
-          <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-            <img class="img-fluid rounded-circle mb-3" src="img/gustavo.jpg" alt="">
-            <h5>Gustavo</h5>
-            <!--<p class="font-weight-light mb-0">"This is fantastic! Thanks so much guys!"</p>-->
-          </div>
-        </div>-->
-
-        <div class="col-lg-2">
-          <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-            <img class="img-fluid rounded-circle mb-3" src="img/bruno.jpg" alt="">
-            <h5>Bruno</h5>
-            <!--<p class="font-weight-light mb-0">"This is fantastic! Thanks so much guys!"</p>-->
-          </div>
-        </div>
-
-        <div class="col-lg-2">
-          <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-            <img class="img-fluid rounded-circle mb-3" src="img/gustavo.jpg" alt="">
-            <h5>Gustavo</h5>
-            <!--<p class="font-weight-light mb-0">"This is fantastic! Thanks so much guys!"</p>-->
-          </div>
-        </div>
-
-        <div class="col-lg-2">
-          <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-            <img class="img-fluid rounded-circle mb-3" src="img/jonatas.jpg" alt="">
-            <h5>Jonatas</h5>
-            <!--<p class="font-weight-light mb-0">"This is fantastic! Thanks so much guys!"</p>-->
-          </div>
-        </div>
-
-
-        <div class="col-lg-2">
-          <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-            <img class="img-fluid rounded-circle mb-3" src="img/acacia.jpg" alt="">
-            <h5>Acacia</h5>
-            <!--<p class="font-weight-light mb-0">"This is fantastic! Thanks so much guys!"</p>-->
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <section class="testimonials text-center bg-light">
-    <div class="container">
-      <h2 class="mb-5">Colaboradores</h2>
-      <div class="row">
-        <div class="col-lg-3">
-          <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-            <img class="img-fluid rounded-circle mb-3" src="img/tiago.jpg" alt="">
-            <h5>Tiago França</h5>
-            <!--<p class="font-weight-light mb-0">"This is fantastic! Thanks so much guys!"</p>-->
-          </div>
-        </div>
-        <div class="col-lg-3">
-          <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-            <img class="img-fluid rounded-circle mb-3" src="img/fantasma.jpg" alt="">
-            <h5>Elton Costa</h5>
-            <!--<p class="font-weight-light mb-0">"This is fantastic! Thanks so much guys!"</p>-->
-          </div>
-        </div>
-        <div class="col-lg-3">
-          <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-            <img class="img-fluid rounded-circle mb-3" src="img/emanuele.jpg" alt="">
-            <h5>Emanuele Nunes</h5>
-            <!--<p class="font-weight-light mb-0">"This is fantastic! Thanks so much guys!"</p>-->
-          </div>
-        </div>
-        <div class="col-lg-3">
-          <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-            <img class="img-fluid rounded-circle mb-3" src="img/igor.jpg" alt="">
-            <h5>Igor</h5>
-            <!--<p class="font-weight-light mb-0">"This is fantastic! Thanks so much guys!"</p>-->
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-  <!-- Call to Action -->
-  <section class="call-to-action text-white text-center">
-    <div class="overlay"></div>
-    <div class="container">
-      <div class="row">
-        <div class="col-xl-9 mx-auto">
-          <h2 class="mb-2">Entre em contato através do email <a href="mailto:suporte@labnet.nce.ufrj.br">suporte@labnet.nce.ufrj.br</a></h2>
-
-        </div>
-
-      <!--  <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
-          <form>
-            <div class="form-row">
-              <div class="col-12 col-md-9 mb-2 mb-md-0">
-                <input type="email" class="form-control form-control-lg" placeholder="Enter your email...">
-              </div>
-              <div class="col-12 col-md-3">
-                <button type="submit" class="btn btn-block btn-lg btn-primary">Sign up!</button>
-              </div>
-            </div>
-          </form>
-        </div>-->
-
-      </div>
-    </div>
-  </section>
-
-
-  <section class="testimonials text-center bg-light">
-    <div class="container">
-      <h2 class="mb-5">Instituições</h2>
-      <div class="row">
-
-        <div class="col-lg-4">
-          <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-                        <a href="http://ufrj.br" target="_blank">
-            <img class="img-fluid rounded-circle mb-3" src="img/ufrj.jpg" alt="">
-            <h5>UFRJ</h5>
-            <p class="font-weight-light mb-0">
-
-              Universidade Federal do Rio de Janeiro</p>
-            </a>
-          </div>
-        </div>
-
-        <div class="col-lg-4">
-          <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-            <a href="http://portal.nce.ufrj.br" target="_blank">
-            <img class="img-fluid rounded-circle mb-3" src="img/nce.jpg" alt="">
-            <h5>NCE</h5>
-            <p class="font-weight-light mb-0">
-            Instituto Tércio Pacitti de Aplicações e Pesquisas Computacionais
-          </a>
+   <!-- Start Blog Layout -->
+  <div class="container">
+    <div class="prow">
+      <img src="images/icons/lafusion.svg">
+      <div class="col-md-6 item">
+        <div class="item-in">
+          <h4>The Latin American Workshop on Information Fusion</h4>
+          <div class="seperator"></div>
+          <p>The First Latin American Workshop on Information Fusion (LAFUSION 2023) is a workshop focusing on the latest research results on the Information Fusion in Latin America. The goal of this workshop is to create a community of Information Fusion researchers in Latin America. Accepted papers will be published in IEEE. Authors of accepted papers are expected to present their work in a plenary session as part of the main workshop program.
+            Information fusion is a multidisciplinary field that focuses on combining and integrating information from diverse sources to improve the accuracy, completeness, and reliability of the resulting information. It involves the process of merging data or knowledge from multiple sensors, databases, or information systems to generate a unified and coherent representation of the underlying reality.  
           </p>
-          </div>
+          <a href="https://lafusion.cos.ufrj.br/" target = "blank" >
+          <button class="nbutton type1 neg">
+            <span>Saiba Mais</span>
+          </button>
+          </a>
         </div>
-        <div class="col-lg-4">
-          <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-                        <a href="http://ppgi.ufrj.br" target="_blank">
-            <img class="img-fluid rounded-circle mb-3" src="img/ppgi.jpg" alt="">
-            <h5>PPGI</h5>
-    <p class="font-weight-light mb-0">Programa de Pós-Graduação em Informática da Universidade Federal do Rio de Janeiro</p>
-        </a>
-        </div>
-        </div>
-
+      </div>
+    </div>
+  </div>
+</section>
+<!--------- Publicações ------------->
+<!-- <section class="cont-proj">
+  <section class="title container">
+    <div class="trow">
+      <div class="col-md-12">
+        <h1>Título Provisório</h1>
+        <div class="seperator"></div>
+        <p>Blocks with hover effects</p>
       </div>
     </div>
   </section>
-
-
-  <!-- Footer -->
- <footer class="footer bg-light">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6 h-100 text-center text-lg-left my-auto">
-        <!--   <ul class="list-inline mb-2">
-            <li class="list-inline-item">
-              <a href="#">About</a>
-            </li>
-            <li class="list-inline-item">&sdot;</li>
-            <li class="list-inline-item">
-              <a href="#">Contact</a>
-            </li>
-            <li class="list-inline-item">&sdot;</li>
-            <li class="list-inline-item">
-              <a href="#">Terms of Use</a>
-            </li>
-            <li class="list-inline-item">&sdot;</li>
-            <li class="list-inline-item">
-              <a href="#">Privacy Policy</a>
-            </li>
-          </ul> -->
-        <p class="lead mb-0">  Endereço:<br><a href="https://www.google.com/maps/place/LabNet/@-22.8579454,-43.232273,19z/data=!4m5!3m4!1s0x9979aee065afe1:0x6e43238834264165!8m2!3d-22.8579009!4d-43.2321577?hl=pt-BR" target="_blank">
-          Av. Athos da Silveira Ramos, 274 Prédio do CCMN, Cidade Universitária - Ilha do Fundão - Rio de Janeiro, RJ.<br>
-          </a></p>
-          <p class="lead mb-0">  Telefone: <br>+55 21 3938-3229</p>
+   
+  <div class="container">
+    <div class="prow">
+      <div class="col-md-6 item">
+        <div class="item-in">
+          <h4>Some Kind of Title</h4>
+          <div class="seperator"></div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi expedita eveniet consectetur, voluptates voluptatum, sit excepturi earum. Veniam eius amet, accusantium, deserunt officia, quos qui debitis laboriosam velit quis autem!</p>
+          <button href="#" class="nbutton type1 neg">
+            <span>Saiba Mais</span>
+          </button>
         </div>
-        <div class="col-lg-6 h-100 text-center text-lg-right my-auto">
-
-
-          <ul class="list-inline mb-0">
-            <li class="list-inline-item mr-3">
-              <a href="https://www.facebook.com/LabNetNCE/" target="_blank">
-                <i class="fab fa-facebook fa-2x fa-fw"></i>
-              </a>
-            </li>
-            <!--<li class="list-inline-item mr-3">
-              <a href="https://www.facebook.com/LabNetNCE/" target="_blank">
-                <i class="fab fa-twitter-square fa-2x fa-fw"></i>
-              </a>
-            </li>-->
-            <li class="list-inline-item">
-              <a href="https://www.linkedin.com/company/labnet/" target="_blank">
-                <i class="fab fa-linkedin fa-2x fa-fw"></i>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a href="https://www.instagram.com/labnetnce/" target="_blank">
-                <i class="fab fa-instagram fa-2x fa-fw"></i>
-              </a>
-            </li
-
-
-          </ul>
+      </div>
+      <div class="col-md-6 item">
+        <div class="item-in">
+          <h4>Some Kind of Title</h4>
+          <div class="seperator"></div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi expedita eveniet consectetur, voluptates voluptatum, sit excepturi earum. Veniam eius amet, accusantium, deserunt officia, quos qui debitis laboriosam velit quis autem!</p>
+          <button href="#" class="nbutton type1 neg">
+            <span>Saiba Mais</span>
+          </button>
         </div>
-
-                  <p class="text-muted small mb-4 mb-lg-0">&copy; Labnet 2019. All Rights Reserved.</p>
       </div>
     </div>
+  </div>
+</section> -->
+<!-------- Projetos em andamento -------->
+
+<!-------- Equipe -------->
+
+
+<!------------- instituicoes --------------->
+<section class="institutions">
+    <!-- <h3>Instituições associadas</h3> -->
+    <hr>
+    <div class="inst-row">
+      
+      <div class="inst-col">
+        <a href="https://ufrj.br" target="_blank">
+          <button>
+            <img src="images/ufrj-horizontal-cor-rgb-completa-telas.png">
+          </button> 
+          </a>
+      </div>
+
+      <div class="inst-col">
+        <a href="https://pesc.coppe.ufrj.br" target="_blank">
+          <button>
+            <img src="images/pesccor.png">
+          </button>
+        </a>
+      </div>
+
+      <div class="inst-col">
+        <a href="https://nce.ufrj.br" target="_blank">
+          <button>
+            <img src="images/logo_nce.png">
+          </button>
+        </a>
+      </div>
+
+      <div class="inst-col">
+        <a href="https://ppgi.ufrj.br" target="_blank">
+          <button>
+            <img src="images/Logo-PPGI-80-3.png">
+          </button>
+        </a>
+      </div>
+
+    </div>
+</section>
+
+
+<!---------JavaScript para Toggle Menu --------------->
+<script>
+  var navLinks = document.getElementById("navLinks")
+
+  function showMenu(){
+    navLinks.style.right = "0"
+  }
+  function hideMenu(){
+    navLinks.style.right = "-200px"
+  }
+</script>
+<!----------------------------------------------------------->
+
+<!------------Footer ------------>
+  <footer>
+    <div class="footer-row">
+      <div class="footer-col">
+        
+        <img src="images/logo_branca_labnet.png" class="logo">
+        
+      </div>
+      <div class="footer-col">
+        <h3>Endereço<div class="underline"><span></span></div></h3>
+        <p>Av. Athos da Silveira Ramos, 274 Prédio do CCMN, Cidade Universitária - Ilha do Fundão - Rio de Janeiro, RJ.</p>
+        
+        <div class="footer-col2">
+          <p class="email-id">suporte@labnet.nce.ufrj.br</p>
+        </div>
+  
+        <div class="footer-col2">
+          <i class="fa fa-phone" aria-hidden="true"></i>
+          <h4>+55 21 3938-3229</h4>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h3>Links<div class="underline"><span></span></div></h3>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="equipe.html">Equipe</a></li>
+            <li><a href="publicacoes.html">Publicações</a></li>
+            <li><a href="projetos.html">Projetos</a></li>
+            <li><a href="contato.html">Contato</a></li>
+
+        </ul>
+      </div>
+      <div class="footer-col">
+        <div class="social-icons">
+          <!--facebook-->
+          <a href="https://www.facebook.com/labnetnce/" target="_blank">
+              <i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+          <!--Linkedin-->
+          <a href="https://www.linkedin.com/company/labnet/" target="_blank">
+              <i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+          <!--instagram-->
+          <a href="https://www.instagram.com/labnetnce/" target="_blank">
+              <i class="fa fa-instagram" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <p class="copyright">© Labnet 2019. All Rights Reserved.</p>
   </footer>
-
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-<link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
+<!------------------------------->
 </body>
-
 </html>
